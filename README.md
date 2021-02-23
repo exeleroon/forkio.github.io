@@ -19,7 +19,7 @@ Git,
 Методологія БЕМ
 
 Проект на GitHub Pages
-https://github.com/deputatroma/StepProject-Forkio/
+https://deputatroma.github.io/StepProject-Forkio/
 
 
 
