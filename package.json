@@ -10,7 +10,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Roman Kovalchuk, Igor Bulishev",
+  "author": "Roman Kovalchuk, Igor Bulyshev",
   "license": "ISC",
   "devDependencies": {
     "delete": "^1.1.0",

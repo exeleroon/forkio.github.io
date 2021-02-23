@@ -1,4 +1,4 @@
-Проект виконаний: Roman Kovalchuk, Igor Bulishev.
+Проект виконаний: Roman Kovalchuk, Igor Bulyshev.
 
 Розподіл завдань:
 
