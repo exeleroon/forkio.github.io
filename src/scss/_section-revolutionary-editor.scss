@@ -1,0 +1,122 @@
+%icons-parameters {
+    float: left;
+    position: relative;
+    font-size: 12px;
+    border: 1px solid grey;
+    line-height: 20px;
+    vertical-align: middle;
+}
+
+
+.revolutionary-editor-section {
+    height: 400px;
+    @include content-container(1200px);
+    text-align: center;
+
+    @media(max-width: 768px) {
+        @include content-container(798px); 
+    }
+    @media(max-width: 320px) {
+        @include content-container(350px); 
+    }
+}
+
+    .rev-edit-content {
+
+        &_text-unlim-30 {   
+            font-family: $font-primary;
+            color: $color-text-content;
+            font-weight: 400;
+            font-size:  14px;
+            padding-top: 48px;
+        }
+        &_text-h3 {
+            padding-top: 66px;
+            text-transform: uppercase;
+            @include ff-Monts(700);
+            color: #635C73;
+            font-size: 54px;
+        } 
+        &_text-content {
+            margin: 0 auto;
+            padding-top: 35px;
+            font-size: 21px;
+            color: $text-content-color;
+            font-family: $font-secondary;
+            font-weight: 400;
+            width: 860px;
+            line-height: 32px;
+        }
+        
+        @media (max-width: 768px) {
+            &_text-h3 {
+                font-size: 42px;
+            }
+            &_text-content {
+                width: 689px;
+            }
+        }
+        @media (max-width: 320px) {
+            &_text-h3 {
+                font-size: 26px;
+            }
+            &_text-content {
+                width: 276px;
+            }
+        }
+}   
+
+.rev-editor-btns {
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+    width: 500px;
+    height: 25px;
+    margin:  0 auto;
+        @media (max-width: 320px) {
+            width: 250px;
+            display: flex;
+            flex-wrap: wrap;
+            padding-bottom: 100px;
+            .last-el-btn {
+                margin-top: 20px;
+            }
+        }
+
+        &__counter {
+            padding: 1px 7px;
+            font-weight: 700;
+            @extend %icons-parameters;
+            border-left: none;
+            border-top-right-radius: 3px;
+            border-bottom-right-radius: 3px;
+            margin-right: 15px;
+        }
+         &__counter:last-child {
+             margin-right: 0;
+        }
+}
+
+.octicon {
+    vertical-align: text-bottom;
+}
+
+.rev-editor-btns button {
+    float: left;
+    font-size: 11px;
+    border-right: 1px solid grey;
+}
+
+.rev-editor-btns-btn {
+    @extend %icons-parameters;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    cursor: pointer;
+    display: inline-block;
+    padding: -3px 10px;
+    white-space: nowrap;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+

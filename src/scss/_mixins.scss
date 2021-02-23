@@ -1,0 +1,52 @@
+@mixin font($font_name, $file_name, $weight, $style) {
+    @font-face { 
+        font-family: $font_name; 
+        font-display: swap; 
+        src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2"); 
+        font-weight: #{$weight}; font-style: #{$style}; 
+    }
+}
+
+@mixin flex($justify: unset, $align: unset){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin content-container($width){
+    width: $width - 30px;
+    margin: auto;
+}
+
+@mixin content-full-pad15{
+    width: calc(100% - 30px);
+    margin: auto;
+}
+
+@mixin ff-Monts($weight) {
+    font-family: "Montserrat", sans-serif;
+    font-weight: $weight;
+}
+
+@mixin grid ($columns, $gap: unset) {
+    display: grid;
+    grid-template-columns: $columns;
+    gap: $gap;
+}
+
+@mixin gridColRow ($column, $row) {
+    grid-column: $column;
+    grid-row: $row;
+}
+
+
+@mixin wH ($width:unset, $height:unset) {
+    width: $width;
+    height: $height;
+}
+
+@mixin fzFwLh($fontSize:unset, $fontWeight:unset, $lineHeight:unset) {
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+    line-height:  $lineHeight;
+}
