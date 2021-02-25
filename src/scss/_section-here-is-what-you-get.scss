@@ -18,7 +18,7 @@
 .here-is-right-block-image {
     @include gridColRow(2,2);
     background-image: url('../img/here-is-what-u-get/img-1.png');
-    background-size: 620px 511px;
+/*     background-size: 620px 511px; */
     width: 610px;
     background-repeat: no-repeat;
 }
