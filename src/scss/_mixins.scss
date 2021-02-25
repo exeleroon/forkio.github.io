@@ -22,3 +22,31 @@
     width: calc(100% - 30px);
     margin: auto;
 }
+
+@mixin ff-Monts($weight) {
+    font-family: "Montserrat", sans-serif;
+    font-weight: $weight;
+}
+
+@mixin grid ($columns, $gap: unset) {
+    display: grid;
+    grid-template-columns: $columns;
+    gap: $gap;
+}
+
+@mixin gridColRow ($column, $row) {
+    grid-column: $column;
+    grid-row: $row;
+}
+
+
+@mixin wH ($width:unset, $height:unset) {
+    width: $width;
+    height: $height;
+}
+
+@mixin fzFwLh($fontSize:unset, $fontWeight:unset, $lineHeight:unset) {
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+    line-height:  $lineHeight;
+}
