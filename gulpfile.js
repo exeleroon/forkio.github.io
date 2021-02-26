@@ -8,7 +8,7 @@ const sass = require('gulp-sass');
 const clean_css = require("gulp-clean-css");
 const rename = require("gulp-rename");
 const fileinclude = require("gulp-file-include");
-const imagemin = require("gulp-imagemin");
+// const imagemin = require("gulp-imagemin");
 
 function buildHTML() {
     return gulp.src('src/index.html')
@@ -59,18 +59,18 @@ function buildJS() {
         .pipe(gulp.dest('dist/js'))
 }
 
-function buildImages() {
-    return gulp.src('src/img/**')
-        .pipe(
-            imagemin({
-            progressive: true,
-            svgoPlugins: [{removeViewBox: false}],
-            interlaced: true,
-            optimizationLevel: 3 // 0 to 7
-            })
-        )
-        .pipe(gulp.dest('dist/img'))
-}
+// function buildImages() {
+//     return gulp.src('src/img/**')
+//         .pipe(
+//             imagemin({
+//             progressive: true,
+//             svgoPlugins: [{removeViewBox: false}],
+//             interlaced: true,
+//             optimizationLevel: 3 // 0 to 7
+//             })
+//         )
+//         .pipe(gulp.dest('dist/img'))
+// }
 
 function clean() {
     return del('dist/**', { force: true });
@@ -78,13 +78,13 @@ function clean() {
 
 function build() {
     return gulp.series([
-        clean,
+        // clean,
         gulp.parallel([
             buildHTML,   
             copyCSS,      
             buildCSS,     
             buildJS,
-            buildImages
+            // buildImages
         ])
     ])
 }
