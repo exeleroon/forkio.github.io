@@ -10,7 +10,7 @@
     // padding: 0 15px 0 15px;
     max-width: 1170px;
     @include grid(repeat(auto-fill, [col-start] 1fr), unset);
-    grid-template-rows: repeat(2, 130px 411px);
+    grid-template-rows: repeat(3, 140px 411px);
 }
 
 .sections-here-is > * {
@@ -20,7 +20,7 @@
 
 .here-is-right-block-image {
     background-image: url('../img/here-is-what-u-get/img-1.png');
-    grid-row: 5/ span 1;
+    grid-row: 5/ span 2;
     grid-column: 1;
     // margin-top: -220px;
     background-repeat: no-repeat;
@@ -122,9 +122,10 @@
             }
     }
     .here-is-right-block-image {
+        display: grid;
         background-size: 317px 380px;
         margin: 0;
-        @include gridColRow(1, 8);
+        @include gridColRow(1, 6);
         float: right;
         width: 309px;
         height: 350px;
@@ -195,11 +196,12 @@
         grid-row: 1;
         max-width: 768px;
         padding-left: 0;
+        grid-column: 2;
         margin: 0;
     }
     
     .sections-here-is > * {
-        grid-column: col-start 1 / span 2;
+        // grid-column: col-start 1 / span 2;
     }
     .sections-here-is {
         background-color:#F4F4F4;
@@ -209,12 +211,12 @@
     }
     .here-is-right-block-image {
         grid-column: 2;
-        grid-row: 2 / 5;
+        // grid-row: 2 / 5;
+        grid-row: 3 / span 12;
         margin: 0;
         max-width: 610px;
-
-        background-size: 620px 511px;
-        @include grid (610px, 19px);
+        background-size: contain;
+        @include grid (auto, 19px);
     }
     .h3-here-is-what-you-get {
         font-size: 48px;
@@ -226,7 +228,7 @@
         grid-row: 1 / 1;
         padding-right: 40px;
             &__box {
-                @include grid((111px auto), 23px);
+                @include grid((111px 390px), 23px);
                 padding-top: 23px;
             }
             &__content {

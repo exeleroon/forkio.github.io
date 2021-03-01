@@ -1,5 +1,5 @@
 .fork-subscription-pricing-section {
-    height: 2250px;
+    height: auto;
     background-image: url('../img/people-are-talking/background-pricing-section.png');
     background-position: center;
     background-repeat: no-repeat;
@@ -140,7 +140,7 @@
 
 @media (min-width: 993px) {
     .fork-subscription-pricing-section {
-        height: 800px;
+        height: auto;
     }
     .prices-container {
         max-width: 1170px;
