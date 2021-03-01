@@ -1,5 +1,5 @@
 .here-is-what-you-get {
-    // height: 711px;
+    height: 1500px;
     background: #F4F4F4;
     justify-content: center;
     display: flex;
@@ -10,7 +10,7 @@
     // padding: 0 15px 0 15px;
     max-width: 1170px;
     @include grid(repeat(auto-fill, [col-start] 1fr), unset);
-    grid-template-rows: repeat(2, 130px 511px);
+    grid-template-rows: repeat(2, 130px 411px);
 }
 
 .sections-here-is > * {
@@ -20,10 +20,11 @@
 
 .here-is-right-block-image {
     background-image: url('../img/here-is-what-u-get/img-1.png');
-    grid-row: 4 / span 3;
+    grid-row: 5/ span 1;
     grid-column: 1;
-    margin-top: 150px;
+    // margin-top: -220px;
     background-repeat: no-repeat;
+    background-size: contain;
 }
 
 
@@ -123,8 +124,7 @@
     .here-is-right-block-image {
         background-size: 317px 380px;
         margin: 0;
-        margin-top: -30px;
-        @include gridColRow(1, 5);
+        @include gridColRow(1, 8);
         float: right;
         width: 309px;
         height: 350px;
@@ -138,7 +138,7 @@
 @media (min-width: 481px) {
     .here-is-what-you-get {
         background: transparent;
-        height: 1300px;
+        height: 1200px;
     }
     .h3-here-is-what-you-get {
         @include fzFwLh(44px, 700, 44px);
@@ -170,12 +170,14 @@
             }
     }
     .here-is-right-block-image {
+        // background-size: 622px 511px;
+        background-size: contain;
         margin: 0;
         display: grid;
         grid-column: 1;
-        grid-row: 3 / span 4;
-        height: 511px;
-        grid-template-columns: 300px;
+        grid-row: 3 / span 5;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
     }
 }
 
@@ -206,7 +208,8 @@
         grid-template-rows: repeat(2, 130px auto-fill);
     }
     .here-is-right-block-image {
-        @include gridColRow(2,2);
+        grid-column: 2;
+        grid-row: 2 / 5;
         margin: 0;
         max-width: 610px;
 

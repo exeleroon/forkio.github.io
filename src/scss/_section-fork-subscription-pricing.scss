@@ -1,5 +1,5 @@
 .fork-subscription-pricing-section {
-    height: 847px;
+    height: 2250px;
     background-image: url('../img/people-are-talking/background-pricing-section.png');
     background-position: center;
     background-repeat: no-repeat;
@@ -8,6 +8,7 @@
 }
 
 .section-title.margin {
+    font-size: 28;
     padding-top: 88px;
 }
 
@@ -19,22 +20,24 @@
 .prices-container {
     font-family: $font-primary;
     margin-top: 61px;
-    @include grid(257px 257px 299px 257px, 15px);
     align-items: center;
     justify-content: center;
     text-align: center;
     color: $color-text;
 
     &__packages {
+        margin: 0 auto;
+        margin-bottom: 18px;
         @include wH(257px, 457px);
         @include grid(1fr, 0);
         grid-template-rows: 125px;
         background: rgba($color: #fff, $alpha: 0.11);
     }
     &__choosed {
+        margin: 0 auto;
         background-color: rgba($color: #463048, $alpha: 0.84);
-        margin-right: 15px;
-        @include grid(1fr);
+        margin-bottom: 18px;
+        @include grid(1fr, 0);
         @include wH(299px, 560px);
             &__head {
                 @include flex(center, center);
@@ -113,35 +116,17 @@
 }
 
 
-@media (max-width: 768px) {
+@media (min-width: 481px) {
     .fork-subscription-pricing-section {
-        height: 1200px;
-    }
-    .prices-container {
-        @include grid (repeat(auto-fill, minmax(257px, 299px)), 25px);
-            &__packages {
-                &:nth-child(1) {
-                    margin-left: 41px;
-                }
-            }
-        }
-    
-    .section-title {
-    @include fzFwLh(42px, unset, 44px);
-    }
-}
-
-@media (max-width: 320px) {
-    .fork-subscription-pricing-section {
-        height: 2060px;
+        // height: 1100px;
     }
         .prices-container {
-            @include grid (repeat(auto-fill, minmax(1fr)), 18px);
+            @include grid (repeat(auto-fill, minmax(257px, auto)), 25px);
             margin: 0 auto;
             &__packages {
-                margin: 0 auto;
+                justify-self: center;
                 &:nth-child(1) {
-                    margin-left: inherit;
+                    justify-self: end;
                 }
             }
         }
@@ -150,4 +135,24 @@
             padding-top: 14px;
             padding-bottom: 32px;
     }
+}
+
+
+@media (min-width: 993px) {
+    .fork-subscription-pricing-section {
+        height: 800px;
+    }
+    .prices-container {
+        max-width: 1170px;
+        @include grid (repeat(auto-fill, minmax(257px, auto)), 25px);
+        }
+        .section-title.margin {
+            font-size: 48px;
+            padding-top: 50px;
+            padding-bottom: 61px;
+        }
+    .section-title {
+    @include fzFwLh(42px, unset, 44px);
+    }
+   
 } 
