@@ -9,7 +9,7 @@
 
 Завдання №2 - Igor Bulishev
 (Верстка блоку Revolutionary Editor.
-Верстка секції Here is what you get.
+Верстка секції Here is what you get. 
 Верстка секції Fork Subscription Pricing.)
 
 При виконанні завдання проекту використані наступні технології:
