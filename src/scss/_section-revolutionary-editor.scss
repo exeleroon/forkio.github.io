@@ -161,6 +161,8 @@
     white-space: nowrap;
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
+
+    &:hover {
+        fill: #8D81AC;
+    }
 }
-
-
