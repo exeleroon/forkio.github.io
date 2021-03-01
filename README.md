@@ -4,7 +4,8 @@
 
 Завдання №1 - Roman Kovalchuk
 (Верстка шапки сайту з верхнім меню (включаючи меню, що випадає при малому розмірі екрану).
-Верстка секції People Are Talking About Fork.);
+Верстка секції People Are Talking About Fork.
+Код JavaScript.);
 
 Завдання №2 - Igor Bulishev
 (Верстка блоку Revolutionary Editor.
